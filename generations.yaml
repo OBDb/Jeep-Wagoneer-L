@@ -1,0 +1,8 @@
+references:
+  - "https://en.wikipedia.org/wiki/Jeep_Wagoneer_(WS)"
+
+generations:
+  - name: "WS"
+    start_year: 2023
+    end_year: null
+    description: "The long-wheelbase Wagoneer, with the 3.0 L Hurricane straight-six."
