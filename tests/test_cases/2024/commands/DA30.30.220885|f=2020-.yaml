@@ -1,0 +1,17 @@
+command_id: DA30.30.220885|f=2020-
+test_cases:
+- expected_values:
+    WAGL_STEER_ANGLE: -548.5
+  response: 18DAF1300762088506B306CC
+- expected_values:
+    WAGL_STEER_ANGLE: -233.7
+  response: 18DAF1300762088512FF12FC
+- expected_values:
+    WAGL_STEER_ANGLE: -233.5
+  response: 18DAF13007620885130112FF
+- expected_values:
+    WAGL_STEER_ANGLE: -233.5
+  response: 18DAF1300762088513011300
+- expected_values:
+    WAGL_STEER_ANGLE: 206.1
+  response: 18DAF13007620885242D241B
