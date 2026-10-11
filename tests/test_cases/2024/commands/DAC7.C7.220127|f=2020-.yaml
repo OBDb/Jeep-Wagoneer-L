@@ -1,0 +1,5 @@
+command_id: DAC7.C7.220127|f=2020-
+test_cases:
+- expected_values:
+    WAGL_TID_RR: 806407333
+  response: 18DAF1C7076201273010CCA5
