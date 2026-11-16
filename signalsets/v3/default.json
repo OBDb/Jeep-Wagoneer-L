@@ -44,7 +44,7 @@
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "195A"}, "freq": 1,
   "signals": [
-    {"id": "WAGL_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
+    {"id": "WAGL_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure", "suggestedMetric": "absoluteBoostPressure"}
   ]},
 { "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3800"}, "freq": 2,
   "signals": [
@@ -131,10 +131,10 @@
   "signals": [
     {"id": "WAGL_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 720, "min": -720, "div": 10, "add": -720, "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
-{ "hdr": "DA30", "rax": "30", "cmd": {"22": "2962"}, "freq": 0.1, "filter": { "from": 2020 }, "dbgfilter": { "to": 2023, "from": 2025 },
+{ "hdr": "DA30", "rax": "30", "cmd": {"22": "2962"}, "freq": 0.25, "filter": { "from": 2020 }, "dbgfilter": { "to": 2023, "from": 2025 },
   "signals": [
-    {"id": "WAGL_LAT_G", "path": "Orientation", "fmt": {"bix": 4,  "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration"},
-    {"id": "WAGL_LNG_G", "path": "Orientation", "fmt": {"bix": 20, "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Longitudinal acceleration"}
+    {"id": "WAGL_LAT_G", "path": "Orientation", "fmt": {"bix": 4,  "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration",      "suggestedMetric": "lateralAcceleration"},
+    {"id": "WAGL_LNG_G", "path": "Orientation", "fmt": {"bix": 20, "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Longitudinal acceleration", "suggestedMetric": "longitudinalAcceleration"}
   ]},
 { "hdr": "DA40", "rax": "40", "dbg": true, "cmd": {"22": "1004"}, "freq": 30,
   "signals": [
